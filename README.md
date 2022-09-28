@@ -1,6 +1,6 @@
 # Look at the site
 
-https://github.com/Reddripill/todo-for-begginers
+(https://github.com/Reddripill/todo-for-begginers)
 
 # Getting Started with Create React App
 
