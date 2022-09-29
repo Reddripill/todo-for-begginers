@@ -7,22 +7,22 @@ import classNames from 'classnames/bind';
 
 export default function TodoList({ todo, setTodo }) {
 	const [edit, setEdit] = useState(null);
-	const [value, setValue] = useState('')
+	const [value, setValue] = useState('');
 
 	function removeTodo(id) {
 		let newTodo = [...todo].filter(item => item.id !== id);
-		setTodo(newTodo)
+		setTodo(newTodo);
 	}
 	function editTodo(id, title) {
 		setEdit(id);
-		setValue(title)
+		setValue(title);
 	}
 	function statusTodo(id) {
 		let newTodo = [...todo].filter(item => {
 			if (item.id === id) {
 				item.status = !item.status;
 			}
-			return item
+			return item;
 		});
 		setTodo(newTodo);
 	}
@@ -36,15 +36,15 @@ export default function TodoList({ todo, setTodo }) {
 		setTodo(newTodo);
 		setEdit(null);
 	}
-	const bindClass = classNames.bind(style);
-	const bindClassItem = bindClass({
-		'todo-list__item': true,
-		'edit': Boolean(edit)
-	})
+	const bindClassnames = classNames.bind(style);
 	return (
 		<ul className={style['todo-list']}>
 			{todo.map(item => (
-				<li key={item.id} className={bindClassItem}>
+				<li key={item.id} className={bindClassnames(
+					'todo-list__item',
+					edit === item.id ? 'edit' : '',
+					!item.status ? 'complete' : ''
+				)}>
 					{
 						edit === item.id ?
 							<div className={style['todo-list-edit__input']}>

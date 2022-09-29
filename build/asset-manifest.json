@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/todo-for-begginers/static/css/main.f5b7b7e4.css",
-    "main.js": "/todo-for-begginers/static/js/main.443991bb.js",
+    "main.css": "/todo-for-begginers/static/css/main.7d902b59.css",
+    "main.js": "/todo-for-begginers/static/js/main.35affea6.js",
     "index.html": "/todo-for-begginers/index.html",
-    "main.f5b7b7e4.css.map": "/todo-for-begginers/static/css/main.f5b7b7e4.css.map",
-    "main.443991bb.js.map": "/todo-for-begginers/static/js/main.443991bb.js.map"
+    "main.7d902b59.css.map": "/todo-for-begginers/static/css/main.7d902b59.css.map",
+    "main.35affea6.js.map": "/todo-for-begginers/static/js/main.35affea6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5b7b7e4.css",
-    "static/js/main.443991bb.js"
+    "static/css/main.7d902b59.css",
+    "static/js/main.35affea6.js"
   ]
 }

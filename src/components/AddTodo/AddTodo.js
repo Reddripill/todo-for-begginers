@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { v4 } from 'uuid';
-import style from './AddTodo.module.scss'
+import style from './AddTodo.module.scss';
 
 export default function AddTodo({ todo, setTodo }) {
 	const [input, setInput] = useState('');
@@ -13,7 +13,7 @@ export default function AddTodo({ todo, setTodo }) {
 		setInput('')
 	}
 	function handerOnChange(event) {
-		setInput(event.target.value)
+		setInput(event.target.value);
 	}
 	return (
 		<div className={style['add-todo']}>
